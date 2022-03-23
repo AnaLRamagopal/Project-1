@@ -1,0 +1,151 @@
+<html>
+<div class="container-fluid container_positioning" id="apply_now_form_container">
+    <div id="form-container">
+        <div id="registration_heading">
+            <h3>KaroStartup Ambassador Website</h3>
+            <h5>Apply now</h5>
+        </div>
+        <form role="form" id="registration-form" method="POST">
+            <div id="inner_form">
+            <input type="hidden" name="csrf_test_name" value="f567a32553aa75da98099754a7ebf76b"/>
+            <div class="form-group">
+                <label for="email" class="control-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" value="" >
+                <label id="email-error" class="help-block form-error" for="email">&nbsp;</label>
+            </div>
+            <div class="name_container">
+            <div class="col-6" id="first_name_container">
+                <div class="form-group">
+                    <label for="first_name" class="control-label">First Name</label>
+                    <input type="text" class="form-control" id="first_name" name="first_name" value="" >
+                    <label id="first_name-error" class="help-block form-error" for="first_name">&nbsp;</label>
+                </div>
+            </div>
+            <div class="col-6" id="last_name_container">
+                <div class="form-group">
+                    <label for="last_name" class="control-label">Last Name</label>
+                    <input type="text" class="form-control" id="last_name" name="last_name" value="" >
+                    <label id="last_name-error" class="help-block form-error" for="last_name">&nbsp;</label>
+                </div>
+            </div>
+                </div>
+            <div class="form-group">
+                <label for="college" class="control-label">College</label>
+                <input type="text" class="form-control" id="college" name="college" value="">
+                <label id="college-error" class="help-block form-error" for="college">&nbsp;</label>
+            </div>
+            <input type="hidden" class="college_city" id="college_city_location_id" name="college_city_location_id" autocomplete="new-password" />
+            <div class="form-group">
+                <label for="college_city" class="control-label">City of your college</label>
+                <input type="text" class="form-control" id="college_city" name="college_city">
+                <label id="college_city-error" class="help-block form-error" for="college_city">&nbsp;</label>
+            </div>
+            <div class="form-group">
+                <label for="phone_primary" class="control-label">Mobile Number</label>
+                <div class="input-group">
+                    <div class="form-group country-code">
+                        <input type="text" class="form-control" id="country_code" disabled title="Unfortunately ISP program is limited to Indian students only" value="+91" autocomplete="new-password" />
+                    </div>
+                    <div class="form-group mobile-number">
+                        <input type="number" class="form-control" id="phone_primary" name="phone_primary" value="" autocomplete="tel-local">
+                        <label id="phone_primary-error" class="help-block form-error" for="phone_primary">&nbsp;</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="degree" class="control-label" for="degree">Degree</label><br>
+                <select data-placeholder="Choose degree" name="degree" id="degree" class="form-control chosen-select">
+                    <option value="" selected></option>
+                    <option value="Bachelor of Technology (B.Tech)">Bachelor of Technology (B.Tech)</option>
+                    <option value="Bachelor of Engineering (B.E)">Bachelor of Engineering (B.E)</option>
+                    <option value="B.Tech (Hons.)">B.Tech (Hons.)</option>
+                    <option value="Bachelor of Science (B.Sc)">Bachelor of Science (B.Sc)</option>
+                    <option value="Bachelor of Commerce (B.Com)">Bachelor of Commerce (B.Com)</option>
+                    <option value="Bachelor of Business Administration (B.B.A.)">Bachelor of Business Administration (B.B.A.)</option>
+                    <option value="MBA">MBA</option>
+                    <option value="Bachelor of Computer Applications (BCA)">Bachelor of Computer Applications (BCA)</option>
+                    <option value="Bachelor of Commerce (B.Com) (Hons.)">Bachelor of Commerce (B.Com) (Hons.)</option>
+                    <option value="Integrated B.Tech">Integrated B.Tech</option>
+                    <option value="Bachelor of Science (B.Sc) (Hons.)">Bachelor of Science (B.Sc) (Hons.)</option>
+                    <option value="B.A">B.A</option>
+                    <option value="B.A. (Hons.)">B.A. (Hons.)</option>
+                    <option value="Integrated B.E & M.Tech">Integrated B.E & M.Tech</option>
+                    <option value="Masters of Computer Applications (MCA)">Masters of Computer Applications (MCA)</option>
+                    <option value="Bachelor of Computer Science (B.C.S.)">Bachelor of Computer Science (B.C.S.)</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Bachelor of Pharmacy (B.Pharm)">Bachelor of Pharmacy (B.Pharm)</option>
+                    <option value="Master of Computer Applications (MCA)">Master of Computer Applications (MCA)</option>
+                    <option value="B.A. LL.B (Hons.)">B.A. LL.B (Hons.)</option>
+                    <option value="Master of Science (M.Sc)">Master of Science (M.Sc)</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label id="degree-error" class="help-block form-error" for="degree">&nbsp;</label>
+            </div>
+            <div class="form-group degree_other_container" style="display: none">
+                <span class="label_hint">There is a 99% probability that your degree name is in the drop-down menu.</span>
+                <input type="text" class="form-control" id="degree_other" name="degree_other" placeholder="Ex. B.Sc (Hons)" >
+                <label id="degree_other-error" class="help-block form-error" for="degree_other">&nbsp;</label>
+            </div>
+            <div class="form-group">
+                <label for="stream" class="control-label" for="stream">Stream</label>
+                <select  data-placeholder="Choose stream" name="stream" id="stream" class="form-control chosen-select">
+                    <option value="" selected></option>
+                    <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+                    <option value="Electronics and Communication">Electronics and Communication</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Commerce">Commerce</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+                    <option value="Science">Science</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Economics">Economics</option>
+                    <option value="Law">Law</option>
+                    <option value="Computer Application">Computer Application</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Commerce with Maths">Commerce with Maths</option>
+                    <option value="Accounts">Accounts</option>
+                    <option value="Electronics and Telecommunication Engineering">Electronics and Telecommunication Engineering</option>
+                    <option value="IT">IT</option>
+                    <option value="English">English</option>
+                    <option value="Chemical Engineering">Chemical Engineering</option>
+                    <option value="Pharmacy">Pharmacy</option>
+                    <option value="Management">Management</option>
+                    <option value="Arts">Arts</option>
+                    <option value="Law">Law</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label id="stream-error" class="help-block form-error" for="stream">&nbsp;</label>
+            </div>
+            <div class="form-group stream_other_container" style="display: none">
+                <input type="text" class="form-control" id="stream_other" name="stream_other" placeholder="Ex. Economics">
+                <label id="stream_other-error" class="help-block form-error" for="stream_other">&nbsp;</label>
+            </div>
+            <div class="form-group">
+                <label for="yoc" class="control-label">Year of college</label>
+                <select  data-placeholder="Choose year" name="yoc" id="yoc" class="form-control chosen-select">
+                    <option value="" selected></option>
+                    <option value="1st">1st Year</option>
+                    <option value="2nd">2nd Year</option>
+                    <option value="3rd">3rd Year</option>
+                    <option value="4th">4th Year</option>
+                    <option value="5th">5th Year</option>
+                    <option value="Not in college">Not in college</option>
+                </select>
+                <label id="yoc-error" class="help-block form-error" for="yoc">&nbsp;</label>
+            </div>
+                                <div class="form-group">
+                        <label for="question19" class="control-label">
+                            How did you find our Campus Ambassador website?                        </label>
+                        <textarea class="form-control custom_ques_textarea answers_1" rows="5" id="questions_19" name="questions_19" placeholder="Mention in about 100 words." q_id='19'></textarea>
+                        <label id="questions_19-error" class="help-block form-error" for="questions_19">&nbsp;</label>
+                    </div>
+                    <script nonce="Uoacyx6d7SZQrigRu1G4RQ==">
+                        questions['19'] = [];
+                        questions['19']['min_length'] = '0';
+                        questions['19']['max_length'] = '1200';
+                    </script>
+                      
