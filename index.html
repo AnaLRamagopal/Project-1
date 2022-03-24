@@ -1,26 +1,19 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=0.1">
-        <title>KaroStartup Campus Ambassador Website</title>
-        <link rel="stylesheet" href="style.css">
-     </head>
-<body>
-    <section class="header">
-    </section>
-<div class="container-fluid container_positioning" id="apply_now_form_container">
-    <div id="form-container">
+ <body style = "background: url(/Users/ananyaramagopal/Downloads/Palette.jpg)"></body>
+    <div id="form-container" align="left" style="color: black;">
         <div id="registration_heading">
-            <h3>KaroStartup Ambassador Website</h3>
-            <h5>Apply now</h5>
+	<div class="container">
+            <h3 align="center" style="color: red;">KaroStartup Ambassador Website</h3>
         </div>
+	<div class="sub-container>
         <form role="form" id="registration-form" method="POST">
             <div id="inner_form">
             <input type="hidden" name="csrf_test_name" value="f567a32553aa75da98099754a7ebf76b"/>
             <div class="form-group">
                 <label for="email" class="control-label">Email address</label>
                 <input type="email" class="form-control" id="email" name="email" value="" >
-                <label id="email-error" class="help-block form-error" for="email">&nbsp;</label>
-            </div>
+                <label id="email-error" class="help-block form-error" for="email">&nbsp;</label></br>
+            </div></br>
             <div class="name_container">
             <div class="col-6" id="first_name_container">
                 <div class="form-group">
@@ -28,26 +21,27 @@
                     <input type="text" class="form-control" id="first_name" name="first_name" value="" >
                     <label id="first_name-error" class="help-block form-error" for="first_name">&nbsp;</label>
                 </div>
-            </div>
-            <div class="col-6" id="last_name_container">
+            </div></br>
+                <div class="col-6" id="last_name_container">
                 <div class="form-group">
                     <label for="last_name" class="control-label">Last Name</label>
                     <input type="text" class="form-control" id="last_name" name="last_name" value="" >
                     <label id="last_name-error" class="help-block form-error" for="last_name">&nbsp;</label>
                 </div>
-            </div>
+            </div></br>
                 </div>
-            <div class="form-group">
+                 <div class="form-group">
                 <label for="college" class="control-label">College</label>
+                
                 <input type="text" class="form-control" id="college" name="college" value="">
                 <label id="college-error" class="help-block form-error" for="college">&nbsp;</label>
             </div>
             <input type="hidden" class="college_city" id="college_city_location_id" name="college_city_location_id" autocomplete="new-password" />
-            <div class="form-group">
+            <div class="form-group"></br>
                 <label for="college_city" class="control-label">City of your college</label>
                 <input type="text" class="form-control" id="college_city" name="college_city">
                 <label id="college_city-error" class="help-block form-error" for="college_city">&nbsp;</label>
-            </div>
+            </div></br>
             <div class="form-group">
                 <label for="phone_primary" class="control-label">Mobile Number</label>
                 <div class="input-group">
@@ -59,9 +53,9 @@
                         <label id="phone_primary-error" class="help-block form-error" for="phone_primary">&nbsp;</label>
                     </div>
                 </div>
-            </div>
+            </div></br>
             <div class="form-group">
-                <label for="degree" class="control-label" for="degree">Degree</label><br>
+                <label for="degree" class="control-label" for="degree">Degree</label>
                 <select data-placeholder="Choose degree" name="degree" id="degree" class="form-control chosen-select">
                     <option value="" selected></option>
                     <option value="Bachelor of Technology (B.Tech)">Bachelor of Technology (B.Tech)</option>
@@ -87,13 +81,12 @@
                     <option value="Master of Science (M.Sc)">Master of Science (M.Sc)</option>
                     <option value="Other">Other</option>
                 </select>
-                <label id="degree-error" class="help-block form-error" for="degree">&nbsp;</label>
+                <label id="degree-error" class="help-block form-error" for="degree">&nbsp&nbsp&nbsp&nbsp&nbsp;</label>
             </div>
             <div class="form-group degree_other_container" style="display: none">
-                <span class="label_hint">There is a 99% probability that your degree name is in the drop-down menu.</span>
-                <input type="text" class="form-control" id="degree_other" name="degree_other" placeholder="Ex. B.Sc (Hons)" >
-                <label id="degree_other-error" class="help-block form-error" for="degree_other">&nbsp;</label>
-            </div>
+                <input type="text" class="form-control" id="degree_other" name="degree_other">
+                <label id="degree_other-error" class="help-block form-error" for="degree_other">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;</label>
+            </div></br>
             <div class="form-group">
                 <label for="stream" class="control-label" for="stream">Stream</label>
                 <select  data-placeholder="Choose stream" name="stream" id="stream" class="form-control chosen-select">
@@ -129,9 +122,9 @@
                 <label id="stream-error" class="help-block form-error" for="stream">&nbsp;</label>
             </div>
             <div class="form-group stream_other_container" style="display: none">
-                <input type="text" class="form-control" id="stream_other" name="stream_other" placeholder="Ex. Economics">
+                <input type="text" class="form-control" id="stream_other" name="stream_other">
                 <label id="stream_other-error" class="help-block form-error" for="stream_other">&nbsp;</label>
-            </div>
+            </div></br>
             <div class="form-group">
                 <label for="yoc" class="control-label">Year of college</label>
                 <select  data-placeholder="Choose year" name="yoc" id="yoc" class="form-control chosen-select">
@@ -144,21 +137,34 @@
                     <option value="Not in college">Not in college</option>
                 </select>
                 <label id="yoc-error" class="help-block form-error" for="yoc">&nbsp;</label>
-            </div>
+            </div></br>
                                 <div class="form-group">
                         <label for="question19" class="control-label">
-                            How did you find our Campus Ambassador website?                        </label>
-                        <textarea class="form-control custom_ques_textarea answers_1" rows="5" id="questions_19" name="questions_19" q_id='19'></textarea>
-                        <label id="questions_19-error" class="help-block form-error" for="questions_19">&nbsp;</label>
+                            Why does KaroStartup excite you?</label></br>
+                        <textarea class="form-control custom_ques_textarea answers_1" rows="5" id="questions_19" name="questions_19"></textarea>
+                        <label id="questions_19-error" class="help-block form-error" for="questions_19">&nbsp&nbsp;</label>
                     </div>
                     <script nonce="Uoacyx6d7SZQrigRu1G4RQ==">
                         questions['19'] = [];
                         questions['19']['min_length'] = '0';
                         questions['19']['max_length'] = '1200';
+                    </script></br>
+                                        <div class="form-group">
+                        <label for="question20" class="control-label">
+                            How would you create awareness about</br> KaroStartup in your college?</label></br>
+                        <textarea class="form-control custom_ques_textarea answers_2" rows="5" id="questions_20" name="questions_20" q_id='20'></textarea>
+                        <label id="questions_20-error" class="help-block form-error" for="questions_20">&nbsp;</label>
+                    </div>
+                    <script nonce="Uoacyx6d7SZQrigRu1G4RQ==">
+                        questions['20'] = [];
+                        questions['20']['min_length'] = '0';
+                        questions['20']['max_length'] = '1200';
                     </script>
             </div>
-        </form>
     </div>
+<button align="center" style="color: red;">APPLY NOW</button>
+</form>
     </div>
-    </body>
+</div>
+</div>
 </html>
